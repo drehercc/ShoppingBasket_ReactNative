@@ -1,3 +1,4 @@
+import React from 'react';
 import {StyleSheet, Alert, TouchableOpacity} from 'react-native';
 
 import Txt from './text';

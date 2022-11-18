@@ -1,18 +1,19 @@
-import { StyleSheet, View} from 'react-native';
+import { ScrollView, StyleSheet, View } from 'react-native';
 
-import Txt from '../../Components/text';
 
+import Item from './Components/items';
 import Top from './Components/top';
 import Details from './Components/details';
 
-export default function Basket({top,details}){
+export default function Basket({ top, details,items }) {
 
-    return <>
+    return <ScrollView>
         <Top{...top} ></Top>
-        <View style = {styles.basket}>
+        <View style={styles.basket}>
             <Details{...details}></Details>
+            <Item {...items}/>
         </View>
-    </>
+    </ScrollView>
 
 }
 
@@ -21,8 +22,8 @@ export default function Basket({top,details}){
 
 
 const styles = StyleSheet.create({
-    basket : {
-        paddingVertical : 8,
-        paddingHorizontal : 16
+    basket: {
+        paddingVertical: 8,
+        paddingHorizontal: 16
     }
 });

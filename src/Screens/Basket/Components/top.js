@@ -1,3 +1,4 @@
+import React from 'react';
 import { Image, StyleSheet, Dimensions} from 'react-native';
 import Txt from '../../../Components/text';
 import top from '../../../../assets/topo.png';
